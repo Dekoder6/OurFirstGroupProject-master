@@ -1,0 +1,124 @@
+﻿#s4-ribbonrow {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+
+
+table td {
+    padding: 1rem;
+    /*transition: all 0.3s ease;*/
+    text-align: center;
+}
+
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.btn {
+    width: 50%;
+    margin: 1rem 0 1rem 0;
+    padding: 1rem 1rem;
+    background: transparent;
+    border: 0.1rem solid #111;
+    outline: 0;
+    border-radius: 0.4rem;
+    font: inherit;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    transition: all 0.25s ease;
+    color: white !important;
+}
+
+
+    .btn:hover,
+    .btn:focus {
+        border: 0.1rem solid #f04;
+        color: #f04;
+        transition: 0.3s;
+    }
+
+.btn_add_req {
+    background-color: #c62743 !important;
+    border-color: #c62743 !important;
+}
+
+    .btn_add_req:focus,
+    .btn_add_req:visited {
+        box-shadow: 0px 0px 3px #c62743 !important;
+        /* outline-color: #c62743 !important;*/
+        outline: #c62743 !important;
+    }
+
+    .btn_add_req:hover,
+    .btn_add_req:active {
+        box-shadow: 0px 0px 16px #c62743 !important;
+        /* outline-color: #c62743 !important;*/
+        outline: #c62743 !important;
+    }
+
+.btn-default,
+.svg-inline--fa fa-cog fa-w-16,
+.svg-inline--fa fa-sort fa-w-10 {
+    color: #c62743 !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0px 0px 3px #c62743 !important;
+    /* outline-color: #c62743 !important;*/
+    outline: #c62743 !important;
+    border-color: #c62743 !important;
+    border-bottom: 0.1rem solid #f04;
+}
+
+
+span {
+    text-decoration: none;
+}
+
+
+
+/* make it red instead (with with same width and style) */
+select:active,
+select:hover {
+    /*outline-color: #f00;*/
+    outline: none;
+}
+
+form input,
+form textarea,
+form select {
+    width: 90%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 2rem;
+    font: inherit;
+    font-size: 1rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+div.error {
+    color: #f33;
+    padding: 0;
+    margin: 2px 0 0 0;
+    font-size: 0.7em;
+    padding-left: 18px;
+    background-image: url('error.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}

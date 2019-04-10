@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1C9F8E6-79DA-4F15-9FCD-BFE4EBC2416F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OutFirstGroupProject</RootNamespace>
+    <AssemblyName>OutFirstGroupProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <AssemblyDeploymentTarget>WebApplication</AssemblyDeploymentTarget>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Events\SendMail\SendMail.cs" />
+    <Compile Include="List\FeedBookList\NewItemPage.aspx.cs">
+      <DependentUpon>NewItemPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List\FeedBookList\NewItemPage.aspx.designer.cs">
+      <DependentUpon>NewItemPage.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Column\FeedBookCategory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{10482ea4-1449-4869-9bde-c8ba350da668}</SharePointProjectItemId>
+    </None>
+    <None Include="Column\FeedBookComments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f74cee4d-10d1-469a-9ba2-828248ed4dda}</SharePointProjectItemId>
+    </None>
+    <None Include="Column\FeedBookEmail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63cb97aa-07f1-4cd3-ab37-fbff54b4f3c8}</SharePointProjectItemId>
+    </None>
+    <None Include="Column\FeedBookStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0d922979-ed00-495c-86e9-00ca13373e9c}</SharePointProjectItemId>
+    </None>
+    <None Include="Content\FeedBookContent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b03ebaba-b57d-4bf4-ac93-4f582f1adeb8}</SharePointProjectItemId>
+    </None>
+    <None Include="Events\SendMail\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{990db2df-7065-4ed2-9a6b-b0888f3dbfd6}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{ef567236-7b2d-446c-bce8-7a29e6b65965}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{64552c59-8106-447f-af9c-f3ad93363b12}</SharePointProjectItemId>
+    </None>
+    <None Include="List\FeedBookList\FeadBookAttach\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac0c5146-dc36-44cb-877d-2970a2c107cf}</SharePointProjectItemId>
+    </None>
+    <None Include="List\FeedBookList\FeedBookListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6b302ae5-d73b-4c5b-be95-89516e7fd8f8}</SharePointProjectItemId>
+    </None>
+    <None Include="List\FeedBookList\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d789ab6-4039-4f8c-b488-a3b7117166bd}</SharePointProjectItemId>
+    </None>
+    <None Include="List\ListCategory\ListCategoryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cd516b2c-fa64-481a-a33c-ff6a6c6575ce}</SharePointProjectItemId>
+    </None>
+    <None Include="List\ListCategory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7b817a50-9800-439d-b67a-353820bb1d48}</SharePointProjectItemId>
+    </None>
+    <None Include="List\ListStatus\ListStatusInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{081dd39f-1014-4bd5-9332-e0b2ac080b1d}</SharePointProjectItemId>
+    </None>
+    <None Include="List\ListStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{62844807-b45e-4673-9764-81abe48b7831}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{61cdcbf7-1771-4c6a-8c76-3856b72d475b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Resources1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3ddbae91-33e0-446c-adc8-7897434128b2}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Layouts\OutFirstGroupProject\JS\FuntctionValidate.js" />
+    <Content Include="Layouts\OutFirstGroupProject\JS\jquery-3.3.1.min.js" />
+    <Content Include="Layouts\OutFirstGroupProject\JS\jquery.form-validator.min.js" />
+    <Content Include="Layouts\OutFirstGroupProject\style\Backstyle.css" />
+    <Content Include="Column\FeedBookCategory\Elements.xml" />
+    <Content Include="Column\FeedBookComments\Elements.xml" />
+    <Content Include="Column\FeedBookEmail\Elements.xml" />
+    <Content Include="Column\FeedBookStatus\Elements.xml" />
+    <Content Include="Content\FeedBookContent\Elements.xml" />
+    <Content Include="Events\SendMail\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="List\FeedBookList\FeadBookAttach\Elements.xml" />
+    <Content Include="List\FeedBookList\NewItemPage.aspx" />
+    <Content Include="List\FeedBookList\Elements.xml" />
+    <Content Include="List\FeedBookList\FeedBookListInstance\Elements.xml" />
+    <Content Include="List\FeedBookList\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="List\ListCategory\Elements.xml" />
+    <Content Include="List\ListCategory\ListCategoryInstance\Elements.xml" />
+    <Content Include="List\ListCategory\Schema.xml" />
+    <Content Include="List\ListStatus\Elements.xml" />
+    <Content Include="List\ListStatus\ListStatusInstance\Elements.xml" />
+    <Content Include="List\ListStatus\Schema.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources1\vsProject.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources1\vsProject.ru-RU.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources1\vsProject.ua-UA.resx" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

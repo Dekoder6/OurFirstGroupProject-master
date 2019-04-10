@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ListStatus"
+                OnQuickLaunch="TRUE"
+                TemplateType="100"
+                Url="Lists/ListStatus"
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Новый</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">На рассмотрении</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Исправлен</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Отклонен</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

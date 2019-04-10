@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="FeedBookList" OnQuickLaunch="FALSE" TemplateType="1000000" Url="Lists/FeedBookList" Description="My List Instance"></ListInstance>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f56dfe58-4142-4331-a2ca-1b8adda15aad}"
+       Name="FeedBookStatus"
+       DisplayName="Status"
+       Type="Lookup"
+       List="Lists/ListStatus"
+       ShowField="Title"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

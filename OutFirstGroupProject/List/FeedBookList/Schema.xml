@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="FeedBookList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/FeedBookList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+    <ContentType ID="0x0100E5FF956F2E3449D496CE66A89E119257" Name="FeedBookContent" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          
+          
+          
+          
+        <FieldRef ID="{3936b646-4836-452f-ab38-454152fa4c29}" DisplayName="Category" Required="FALSE" Name="FeedBookCategory" /><FieldRef ID="{307deacb-7f67-4763-9098-2ca469f0cef9}" DisplayName="Comments" Required="FALSE" Name="FeedBookComments" /><FieldRef ID="{d587ef84-e802-4dbe-9f73-9302bd069a2e}" DisplayName="E-mail" Required="FALSE" Name="FeedBookEmail" /><FieldRef ID="{f56dfe58-4142-4331-a2ca-1b8adda15aad}" DisplayName="Status" Required="FALSE" Name="FeedBookStatus" /></FieldRefs>
+      </ContentType></ContentTypes>
+    <Fields>
+      
+      
+      
+      
+    <Field ID="{3936b646-4836-452f-ab38-454152fa4c29}" Name="FeedBookCategory" DisplayName="Category" Type="Lookup" Required="TRUE" List="Lists/ListCategory" ShowField="Title" Group="Custom Site Columns"></Field><Field ID="{307deacb-7f67-4763-9098-2ca469f0cef9}" Name="FeedBookComments" DisplayName="Comments" Type="Note" Required="TRUE" Group="Custom Site Columns"></Field><Field ID="{d587ef84-e802-4dbe-9f73-9302bd069a2e}" Name="FeedBookEmail" DisplayName="E-mail" Type="Text" Required="TRUE" Group="Custom Site Columns"></Field><Field ID="{f56dfe58-4142-4331-a2ca-1b8adda15aad}" Name="FeedBookStatus" DisplayName="Status" Type="Lookup" List="Lists/ListStatus" ShowField="Title" Required="FALSE" Group="Custom Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <!-- <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>-->
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="ID"></FieldRef><FieldRef Name="FeedBookCategory" /><FieldRef Name="FeedBookComments" /><FieldRef Name="FeedBookEmail" /><FieldRef Name="FeedBookStatus" /><FieldRef Name="Attachments"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="features\$SharePoint.Feature.DeploymentPath$\FeedBookList\NewItemPage.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

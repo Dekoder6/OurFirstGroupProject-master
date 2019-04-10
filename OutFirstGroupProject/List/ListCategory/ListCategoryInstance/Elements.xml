@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="ListCategory"
+                OnQuickLaunch="TRUE"
+                TemplateType="100"
+                Url="Lists/ListCategory"
+                Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Идея</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Ошибка</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Критическая ошибка</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Дизайн</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

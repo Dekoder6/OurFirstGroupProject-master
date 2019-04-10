@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{911bcde0-3e86-4a79-b0b3-cc47ee1c6768}"
+       Name="FeadBookAttach"
+       DisplayName="Fead Book Attach"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{0578cd7d-ad22-449a-9dbb-2f8cfa13a784}"
+       Name="FeedBackStatus"
+       DisplayName="Feed Back Status"
+       Type="Text"
+       Required="FALSE"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>

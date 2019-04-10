@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.ListDefinition" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="FeedBookList\" Type="ElementManifest" />
+    <ProjectItemFile Source="Schema.xml" Target="FeedBookList\" Type="ElementFile" />
+    <ProjectItemFile Source="NewItemPage.aspx" Target="FeedBookList\" Type="ElementFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry2" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="OutFirstGroupProject.List.FeedBookList" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+  <ExtensionData>
+    <ExtensionDataItem Key="Microsoft.VisualStudio.SharePoint.ListSettings.ListFieldsContentTypeID" Value="0x0100236a72444bca4e7397a23088af468baf" />
+  </ExtensionData>
+</ProjectItem>

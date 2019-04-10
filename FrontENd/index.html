@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Queries List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" app="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/SiteAssets/css/normalize.css">
+  <link rel="stylesheet" href="/SiteAssets/css/all.css">
+  <link rel="stylesheet" href="/SiteAssets/css/material.css">
+  <link rel="stylesheet" href="/SiteAssets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/SiteAssets/css/dragdealer.css">
+  <link rel="stylesheet" href="/SiteAssets/css/style.css">
+
+  <script type="text/javascript" src="/SiteAssets/js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="/SiteAssets/js/vue-2.5.17.js"></script>
+  <script type="text/javascript" src="/SiteAssets/js/vuetify.js"></script>
+  <script type="text/javascript" src="/SiteAssets/js/all.js"></script>
+  <script type="text/javascript" src="/SiteAssets/js/dragdealer.min.js"></script>
+  <script type="text/javascript" src="/SiteAssets/js/popper.min.js"></script>
+  <script type="text/javascript" src="/SiteAssets/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!--   кнопка для отображения / скрытия формы -->
+  <div id="panel">
+    <div id="panel-content">
+      <div id="app" class="d-none table-responsive position-fixed m-0 p-0">
+        <h2><b>Форма добавления запроса</b></h2>
+
+        <v-app id="table-wrapper" class="ui container">
+          <v-data-table :headers="headers" :items="rows" item-key="value" hide-actions expand class="elevation-1">
+            <template slot="items" slot-scope="props">
+              <td class="text-xs">{{ props.item.ID }}</td>
+              <td class="text-xs">{{ props.item.Category }}</td>
+              <td class="text-xs">{{ props.item.Comment }}</td>
+              <td class="text-xs">{{ props.item.Status }}</td>
+            </template>
+          </v-data-table>
+          <div class="m-0 d-flex align-items-center justify-content-center ">
+            <input type="button" id="button_request" class="btn btn_add_req btn-primary add_request" @click="openDialog"
+              value="Добавить запрос" />
+          </div>
+        </v-app>
+      </div>
+    </div>
+
+    <div id="panel-sticker">
+      <a href="#" id="showHideContent" class="handle add_palitra position-fixed d-flex align-items-center d-block">
+        <span class="fa  mr-4 fa-chevron-left "></span>
+      </a>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="/SiteAssets/js/index.js"></script>
+</body>
+
+</html>

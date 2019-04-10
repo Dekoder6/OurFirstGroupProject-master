@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{3936b646-4836-452f-ab38-454152fa4c29}"
+       Name="FeedBookCategory"
+       DisplayName="Category"
+       Type="Lookup"
+       Required="FALSE"
+       List="Lists/ListCategory"
+       ShowField="Title"
+       Group="Custom Site Columns">
+  </Field>
+</Elements>
